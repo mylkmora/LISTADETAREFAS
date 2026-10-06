@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f8f0f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #9c4d74;
+    margin-bottom: 25px;
+}
+
+.adicionar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #f0d9e5;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #d48fb5;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #d47fa8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #c06b94;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #fdf2f8;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 4px solid #d47fa8;
+}
+
+li.concluida {
+    opacity: 0.7;
+    border-left-color: #7bc96f;
+}
+
+li.concluida .texto-tarefa {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-concluir {
+    background-color: #6cc460;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.btn-concluir:hover {
+    background-color: #57a84c;
+}
+
+.btn-excluir {
+    background-color: #e86a6a;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.btn-excluir:hover {
+    background-color: #d65050;
+}
